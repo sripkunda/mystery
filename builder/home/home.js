@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-    fetch("https://cdn.jsdelivr.net/gh/sripkunda/mystery@master/builder/home/home.html").then(async res => {
+    fetch("https://cdn.jsdelivr.net/gh/sripkunda/mystery@latest/builder/home/home.html").then(async res => {
         const template = await res.text();
         const rendered = Mustache.render(template, options);
         document.documentElement.innerHTML = rendered;
