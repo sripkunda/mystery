@@ -1,3 +1,7 @@
+:root {
+    --image-hover-overlay-color: rgba(47, 0, 112, 0.7);
+}
+
 .title-bar {
     text-align: center;
 }
@@ -41,7 +45,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-color: rgba(47, 0, 112, 0.7); /* Black background with opacity */
+    background-color: var(--image-hover-overlay-color); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     pointer-events: none;
     text-align: center;

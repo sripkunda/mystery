@@ -1,3 +1,7 @@
+:root {
+    --video-opacity: 0.2;
+}
+
 .welcome {
     padding: 100px;
     margin: 0;
@@ -38,7 +42,7 @@ a {
 }
 
 .background-video {
-    opacity: 0.2;
+    opacity: var(--video-opacity);
     height: 100%;
     flex-basis: 100%;
 }
