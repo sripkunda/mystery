@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #ffffee;
+    --link-color: rgb(47, 0, 112);
+}
+
+/* Page Generation and Loading */
+
+input, button, html {
+    font-family: 'Playfair', serif;
+}
+
+.loaded {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* General Website Format */
+
+.center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;   
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: ease 0.2s;
+}
+
+a:hover {
+    background-color: var(--link-color);
+    color: white;
+    transition: ease 0.2s;
+}
+
+::selection {
+    background: var(--link-color); /* WebKit/Blink Browsers */
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--link-color); /* Gecko Browsers */
+    color: white;
+}

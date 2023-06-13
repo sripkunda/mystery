@@ -1,0 +1,92 @@
+.welcome {
+    padding: 100px;
+    margin: 0;
+}
+
+.welcome p {
+    font-size: 25px;
+    width: 50%;
+    line-height: 2;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.welcome h1 {
+    font-size: 150px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+a {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.background-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+.background-video {
+    opacity: 0.2;
+    height: 100%;
+    flex-basis: 100%;
+}
+
+.welcome-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1281px) { 
+    .welcome {
+        padding: 50px;
+    }
+    .welcome h1 {
+        font-size: 120px;
+    }
+}
+@media (max-width:1025px) { 
+    .welcome h1 {
+        font-size: 100px;
+    }
+}
+@media (max-width:961px)  {
+    .welcome {
+        padding: 30px;
+    }
+    .welcome h1 {
+        font-size: 100px;
+    }
+}
+@media (max-width:641px)  {
+    .welcome p {
+        font-size: 25px;
+        width: 75%;
+    }
+    
+    .welcome h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width:481px)  {
+    .welcome p {
+        font-size: 20px;
+        width: 75%;
+    }
+    
+    .welcome h1 {
+        font-size: 80px;
+    }
+}

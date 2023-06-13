@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sripkunda/mystery/builder/page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sripkunda/mystery/builder/home/home.css">
+</head>
+<body style="opacity: 0;">
+    {{#show_background_video}}
+    <div class="background-video-container">        
+        <video autoplay muted loop class="background-video">
+            <source src="{{{ background_video_link }}}" type="video/mp4">
+        </video>
+    </div>
+    {{/show_background_video}}
+    {{^show_background_video}}
+    {{/show_background_video}}
+    <div class="center welcome">
+        <h1>{{{ name }}}</h1>
+        <p>{{{ greeting }}}</p>
+        <div class="welcome-links">
+            {{#welcome_links}}
+                <a href="{{{ link }}}">{{ name }}</a>
+            {{/welcome_links}}
+        </div>
+    </div>
+</body>
+</html>

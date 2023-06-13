@@ -1,0 +1,80 @@
+.title-bar {
+    text-align: center;
+}
+
+.title-bar h1 {
+    font-size: 75px;
+}
+
+.title-bar a {
+    text-decoration: none;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.showcase-image {
+    display: inline-block;
+    min-width: 400px;
+    min-height: 400px;
+    margin: 10px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 50px #e2e2e2;
+}
+
+.showcase-image:hover {
+    transform: scale(1);
+}
+
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    visibility: hidden; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(47, 0, 112, 0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    pointer-events: none;
+    text-align: center;
+    color: white;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.showcase-image:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+.caption-container {
+    padding: 20px;
+}
+
+.caption-container h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.caption-container p {
+    font-size: 20px;
+}
+
+@media (max-width:961px)  {
+    .showcase-image {
+        min-width: 300px;
+        min-height: 300px;
+    }
+}
+@media (max-width:641px)  {
+    .title-bar h1 {
+        font-size: 50px;
+    }
+}

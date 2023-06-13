@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sripkunda/mystery/builder/page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sripkunda/mystery/builder/home/home.css">
+</head>
+<body style="opacity: 0;">
+    <div class="title-bar">
+        <h1>{{{ title }}}</h1>
+    </div>
+
+    <div class="showcase">
+        {{#items}}
+        <div class="showcase-image" style="background-image: url('{{ image }}');">
+            <div class="overlay">
+                <div class="caption-container center">
+                    <h2>{{ name }}</h2>
+                    <p>{{{ caption }}}</p>
+                </div>
+            </div>
+        </div>
+        {{/items}}
+    </div>
+</body>
+</html>
