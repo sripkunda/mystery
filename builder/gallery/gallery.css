@@ -1,5 +1,7 @@
 :root {
     --image-hover-overlay-color: rgba(47, 0, 112, 0.7);
+    --gallery-image-width: 400px;
+    --gallery-image-height: 400px; 
 }
 
 .title-bar {
@@ -22,8 +24,8 @@
 
 .showcase-image {
     display: inline-block;
-    min-width: 400px;
-    min-height: 400px;
+    min-width: var(--gallery-image-width);
+    min-height: var(--gallery-image-height);
     margin: 10px;
     background-position: center center;
     background-size: cover;
@@ -73,8 +75,7 @@
 
 @media (max-width:961px)  {
     .showcase-image {
-        min-width: 300px;
-        min-height: 300px;
+        transform: scale(0.9);
     }
 }
 @media (max-width:641px)  {
