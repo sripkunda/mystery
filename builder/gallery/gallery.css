@@ -77,6 +77,10 @@
     .showcase-image {
         transform: scale(0.9);
     }
+
+    .showcase-image:hover {
+        transform: scale(0.9);
+    }
 }
 @media (max-width:641px)  {
     .title-bar h1 {
