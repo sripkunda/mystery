@@ -53,6 +53,8 @@ a {
     flex-wrap: wrap;
 }
 
+/* Responsive Design */
+
 @media (max-width:1281px) { 
     .welcome {
         padding: 50px;
